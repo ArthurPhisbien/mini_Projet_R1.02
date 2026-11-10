@@ -4,10 +4,29 @@ Site d’équipe en HTML et CSS. Pour le voir sur ton PC, ouvre `index.html` dan
 
 ## Travailler avec VS Code sur Windows
 
-1. **Rejoindre le projet (une fois).** Accepte l’invitation GitHub. Dans VS Code, fais **Ctrl + Maj + P → Git: Clone**, colle `https://github.com/ArthurPhisbien/mini_Projet_R1.02.git`, puis ouvre le dossier cloné. Si on te demande de te connecter, utilise le compte invité.
-2. **Commencer une tâche.** En bas à gauche, sélectionne `main`, la version commune. Fais **Ctrl + Maj + G → … → Pull** pour la mettre à jour. Clique ensuite sur `main` → **Créer une branche**, par exemple `lea/page-contact`. Chacun code sur sa branche.
-3. **Envoyer ton travail.** Dans **Ctrl + Maj + G**, clique sur le **+** à côté des fichiers voulus, écris un message et clique sur **Commit**. Ça enregistre une version sur ton PC. Clique sur **Publier la branche** la première fois, puis **… → Push** les fois suivantes pour envoyer tes commits sur GitHub.
-4. **Partager une partie terminée.** Sur GitHub, ouvre **Pull requests → New pull request**. Choisis ta branche dans **compare** et `main` dans **base**. Une fois la demande relue et fusionnée, chacun peut passer sur `main` et faire **Pull** pour récupérer le résultat.
+**La première fois** · Accepte l’invitation GitHub. Dans VS Code, fais **Ctrl + Maj + P → Git: Clone**, colle l’adresse ci-dessous et ouvre le dossier cloné. Connecte-toi avec le compte invité si GitHub te le demande.
+
+```text
+https://github.com/ArthurPhisbien/mini_Projet_R1.02.git
+```
+
+**Pour chaque tâche**
+
+```mermaid
+flowchart LR
+    A["main à jour"] -->|Créer une branche| B["Ta branche"]
+    B -->|Commit puis Push| C["Ta branche sur GitHub"]
+    C -->|Pull request puis fusion| D["main partagé"]
+```
+
+| Tu veux… | Où cliquer |
+| --- | --- |
+| 📥 **Récupérer le travail de l’équipe** | En bas à gauche, passe sur `main`. Puis **Ctrl + Maj + G → … → Pull**. |
+| 🌿 **Coder sur ta branche** | Depuis `main` à jour, clique sur son nom en bas à gauche → **Créer une branche**. Exemple : `lea/page-contact`. |
+| 📤 **Envoyer ton travail** | **Ctrl + Maj + G → +** sur les fichiers voulus → écris un message → **Commit**. Puis **Publier la branche** au premier envoi, ou **… → Push** ensuite. |
+| 🤝 **Proposer ta partie à l’équipe** | Sur GitHub → **Pull requests → New pull request**. Choisis ta branche dans **compare** et `main` dans **base**. |
+
+> **Commit** enregistre une version sur ton PC. **Push** l’envoie sur GitHub. **Pull** récupère les changements de la branche sur laquelle tu es.
 
 <details>
 <summary>Voir les commandes équivalentes dans le terminal</summary>
