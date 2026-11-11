@@ -1,13 +1,8 @@
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  line-height: 1.5;
-  color: #202124;
-  background-color: #fff;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-main {
-  max-width: 65ch;
-  margin-inline: auto;
-  padding: 2rem 1rem;
+header img{
+    width: 150px;
 }
