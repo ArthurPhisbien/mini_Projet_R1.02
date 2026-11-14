@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation BUT Informatique</title>
+</head>
+<body>
+    <div class="titre">
+        <h1>Présentation du BUT Informatique</h1>
+    </div>
+    <div class="contenu">
+        <p>Le BUT (Bachelor Universitaire de Technologie) Informatique est une formation en trois ans qui prépare les étudiants aux métiers de l'informatique. Il combine des enseignements théoriques et pratiques, permettant aux étudiants d'acquérir des compétences solides dans le développement logiciel, la gestion de bases de données, les réseaux et la cybersécurité.</p>
+        <p>Les étudiants ont également l'opportunité de réaliser des projets concrets et des stages en entreprise, favorisant ainsi leur insertion professionnelle.</p>
+        <table>
+            <tr>
+                <th>Ressources</th>
+                <th>R1.01 Initiation au dev</th>
+                <th>R1.02 Dev. interfaces web</th>
+                <th>R1.03 Intro. archi</th>
+                <th>R1.04 Intro. systèmes</th>
+                <th>R1.05 Introduction BD</th>
+                <th>R1.06 Maths discrètes</th>
+                <th>R1.07 Outils fondamentaux</th>
+                <th>R1.08 Gestion proj. orga.</th>
+                <th>R1.09 Economie</th>
+                <th>R1.10 Anglais</th>
+                <th>R1.11 Bases de la comm.</th>
+                <th>R1.12 PPP</th>
+
+        </table>
+    </div>
+    
+</body>
+</html>
