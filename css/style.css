@@ -68,7 +68,7 @@ header img{
 .nav a:hover {
   background-color: #f0f0f0;
   color: #000;
-  border-color: #912D1A;
+  border-color: #B80C09;
 }
 
 /*====================================FOOTER================================*/
@@ -143,4 +143,56 @@ header img{
   font-size: clamp(2rem, 7.5vw, 6rem);
   line-height: 1;
   letter-spacing: -0.055em;
+}
+
+
+/*====================================Presentation================================*/
+
+.contenu{
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  align-items: stretch;
+  border: 3px solid #a22d42;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+.texte{
+flex: 1;
+border: 1px solid black;
+font-size: 30px;
+}
+
+.tableau{
+flex: 2;
+border: 1px solid red;
+
+}
+
+table{
+width: 100%;
+height: 100%;
+border-collapse: collapse;
+
+}
+
+td{
+border: 1px solid black;
+font-size: 30px;
+}
+
+th{
+border: 1px solid black;
+font-size: 30px;
+}
+
+.titre{
+display: flex;
+justify-content: center;
+}
+
+.intro {
+  margin-bottom: 20px; /* Espace entre ce texte et les blocs en dessous */
 }
