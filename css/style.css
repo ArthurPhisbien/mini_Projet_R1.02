@@ -3,6 +3,8 @@
 * {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 header{
@@ -38,8 +40,8 @@ header img{
 
 .nav{
   width: 100%;
-  padding: 4px;
-  background-color: grey;
+  background-color: #003049;
+  padding: 0;
   
   
 }
@@ -58,7 +60,7 @@ header img{
 
 .nav a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: bold;
   width: 100%;
   display: block;
@@ -155,7 +157,7 @@ header img{
   width: 100%;
   align-items: stretch;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10px;  /*permet d'arrondir les coins des boxs */
 }
 
 .texte{
@@ -168,7 +170,7 @@ min-width: 280px;
 flex: 2;
 position: relative;
 overflow-y: auto;
-border: 2px solid #e6ccb2;
+border: 2px solid #660000;
 border-radius: 10px;
 }
 
@@ -178,30 +180,33 @@ border-collapse: separate;
 border-spacing: 0;
 }
 
+/*En tete du tableau*/
 th{
   position: sticky;         /* Bloque l'en-tête en haut du conteneur .tableau */
   top: 0;                    /* Colle tout en haut à 0px */
   z-index: 2;                /* Passe au-dessus du texte des lignes qui défilent */
-  background-color: #E71523;
+  background-color: #660000;
+  color: #ffffff;
 }
 
+/*Case du tableau*/
 td {
-  background-color: #fdf0d5;
+  background-color: #f3f3f1;
 }
 
+/*Paramétre relatif a l'entête et au case du tableau*/
 td, th {
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  border-bottom: 1px solid #660000;
+  border-right: 1px solid #660000;
   font-size: 22px; 
   padding: 8px;
 }
-
+/*Paramétre du titre de la page*/
 .titre{
-border: 1px solid black;
+color: #003049;
 display: flex;
-justify-content: center;
+justify-content: left;
 border-radius: 10px;
-background-color: #E71523;
 }
 
 .intro {
@@ -219,7 +224,6 @@ background-color: #fffcf7 ;
 }
 
 .explication{
-  font-size: 20px;
   margin: 5px;
   justify-content: center;
 }
@@ -244,4 +248,54 @@ strong{
   border: none;
   border-top: dashed
 }
+
+.box{
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow:0 6px 20px grey;
+  margin: 50px;
+}
+
+p{
+  font-size: 20px;
+}
+
+@media (max-width: 850px){ /* lorsque l'appareil fait moin de 850px de large ce sont ces parametre qui s'applique*/
+  .box{
+    margin: 15px;
+  }
+  
+  .contenu {
+    flex-direction: column; /* le contenue s'affiche empiler en colonne*/
+    gap: 20px;
+  }
+  .texte,.tableau{
+    width: 100%;
+    min-width: 0px;
+    flex: none;
+    box-sizing: border-box;
+  }
+
+  .tableau{
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
+  .tableau table{
+    position: static;
+    width: 100%;
+  }
+
+  .texte ul{
+    padding-left: 20px; 
+  }
+}
+
+.nav{
+  padding: 10px; /*adapte le header */
+}
+
 
