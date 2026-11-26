@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 header{
@@ -153,46 +154,94 @@ header img{
   gap: 30px;
   width: 100%;
   align-items: stretch;
-  border: 3px solid #a22d42;
   padding: 10px;
   border-radius: 10px;
-
 }
 
 .texte{
 flex: 1;
-border: 1px solid black;
-font-size: 30px;
+font-size: clamp(14px, 1.5vw, 20px);;
+min-width: 280px;
 }
 
 .tableau{
 flex: 2;
-border: 1px solid red;
-
+position: relative;
+overflow-y: auto;
+border: 2px solid #e6ccb2;
+border-radius: 10px;
 }
 
 table{
 width: 100%;
-height: 100%;
-border-collapse: collapse;
-
-}
-
-td{
-border: 1px solid black;
-font-size: 30px;
+border-collapse: separate;
+border-spacing: 0;
 }
 
 th{
-border: 1px solid black;
-font-size: 30px;
+  position: sticky;         /* Bloque l'en-tête en haut du conteneur .tableau */
+  top: 0;                    /* Colle tout en haut à 0px */
+  z-index: 2;                /* Passe au-dessus du texte des lignes qui défilent */
+  background-color: #E71523;
+}
+
+td {
+  background-color: #fdf0d5;
+}
+
+td, th {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  font-size: 22px; 
+  padding: 8px;
 }
 
 .titre{
+border: 1px solid black;
 display: flex;
 justify-content: center;
+border-radius: 10px;
+background-color: #E71523;
 }
 
 .intro {
-  margin-bottom: 20px; /* Espace entre ce texte et les blocs en dessous */
+  margin-bottom: 20px; 
+  margin-top: 20px;
+  font-size: 25px;
+  color: #2b211e;
+  border-radius: 10px;
 }
+
+.partie-un{
+padding: 30px;
+border-radius: 10px;
+background-color: #fffcf7 ;
+}
+
+.explication{
+  font-size: 20px;
+  margin: 5px;
+  justify-content: center;
+}
+
+.explication li{
+  margin-bottom: 20px;
+  
+}
+
+strong{
+  color: red;
+}
+
+.tableau table {
+  position: absolute;       
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.separateur{
+  border: none;
+  border-top: dashed
+}
+
